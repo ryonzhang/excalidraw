@@ -191,19 +191,6 @@ export const ShapesSwitcher = ({
         />
       );
     })}
-    <ToolButton
-      className="Shape ToolIcon_type_button__library"
-      type="button"
-      icon={LIBRARY_ICON}
-      name="editor-library"
-      keyBindingLabel="9"
-      aria-keyshortcuts="9"
-      title={`${capitalizeString(t("toolBar.library"))} — 9`}
-      aria-label={capitalizeString(t("toolBar.library"))}
-      onClick={() => {
-        setAppState({ isLibraryOpen: !isLibraryOpen });
-      }}
-    />
   </>
 );
 
